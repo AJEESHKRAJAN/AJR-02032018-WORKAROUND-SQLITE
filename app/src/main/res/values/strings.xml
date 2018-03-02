@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AJR-02032018-WORKAROUND-SQLITE</string>
+    <string name="menuExit">Exit</string>
+    <string name="main_text">An Android application for accessing SQLite database.\nDated : 02-Mar-2018 07:45 AM \n</string>
+</resources>
