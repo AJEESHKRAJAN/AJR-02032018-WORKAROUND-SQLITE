@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.workaround.ajeesh.ajr_02032018_workaround_sqlite.ActivityMain">
     <item
+        android:id="@+id/menuDatabaseOperation"
+        android:title="@string/sqlite_db_opr" />
+    <item
         android:id="@+id/menuExit"
         android:title="@string/menuExit" />
 </menu>

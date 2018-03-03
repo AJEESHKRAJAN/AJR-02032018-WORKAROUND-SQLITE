@@ -1,5 +1,6 @@
 package com.workaround.ajeesh.ajr_02032018_workaround_sqlite;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -60,6 +61,10 @@ public class ActivityMain extends AppCompatActivity {
         boolean handled = true;
 
         switch (id) {
+            case R.id.menuDatabaseOperation: {
+                generateActivityOnClassType(ActivityDatabaseOperation.class);
+                break;
+            }
             case R.id.menuExit: {
                 finish();
                 break;
@@ -69,5 +74,11 @@ public class ActivityMain extends AppCompatActivity {
                 break;
         }
         return handled;
+    }
+
+    private void generateActivityOnClassType(Class<?> activityClass) {
+        LogHelper.LogThreadId(logName, "Activity generated for :" + activityClass);
+        Intent intent = new Intent(this, activityClass);
+        startActivity(intent);
     }
 }
